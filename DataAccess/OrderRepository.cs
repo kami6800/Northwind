@@ -14,6 +14,7 @@ namespace DataAccess
             return context.Invoices.ToList();
         }
 
+
         static public List<Invoices> GetInvoicesByCustomer(string customerId)
         {
             return context.Invoices.Where(o => o.CustomerId == customerId).ToList();
